@@ -1,0 +1,102 @@
+.xwz_box {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%; }
+  .xwz_box .xwz_banner {
+    height: 500px;
+    background: url(../images/xwz_b4.png) no-repeat center center; }
+
+.xwz_bigbox {
+  width: 1200px;
+  height: 1535px;
+  margin: 0 auto; }
+
+.xwz_navbox {
+  width: 298px;
+  height: 580px;
+  background: url(../images/xwz_b1.png);
+  padding-top: 20px;
+  box-sizing: border-box;
+  float: left; }
+  .xwz_navbox .xwz_navtopbox {
+    width: 274px;
+    height: 143px;
+    margin: 0 auto;
+    background: url(../images/xwz_b2.png); }
+  .xwz_navbox .xwz_navbottombox {
+    width: 290px;
+    height: 260px;
+    margin: 22px auto; }
+    .xwz_navbox .xwz_navbottombox .xwz_navli {
+      width: 100%;
+      height: 20%;
+      margin: 0 auto;
+      border-bottom: 1px solid #989898; }
+      .xwz_navbox .xwz_navbottombox .xwz_navli a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 52px;
+        color: #4e4e4e; }
+        .xwz_navbox .xwz_navbottombox .xwz_navli a b {
+          margin-left: 30px;
+          margin-right: 18px;
+          font-size: 18px; }
+        .xwz_navbox .xwz_navbottombox .xwz_navli a i {
+          font-size: 15px;
+          font-style: normal; }
+
+.xwz_titlebox {
+  width: 827px;
+  height: 165px;
+  float: right;
+  padding-top: 33px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999999; }
+  .xwz_titlebox .xwz_first {
+    color: #4e4e4e;
+    font-size: 16px; }
+    .xwz_titlebox .xwz_first i {
+      margin-left: 20px;
+      font-style: normal; }
+  .xwz_titlebox b {
+    font-size: 36px;
+    color: #4e4e4e; }
+  .xwz_titlebox p {
+    font-size: 30px;
+    color: #989898; }
+
+.xwz_con {
+  width: 827px;
+  height: 1370px;
+  float: right; }
+  .xwz_con .xwz_title {
+    width: 100%;
+    height: 25px;
+    margin-top: 60px;
+    margin-bottom: 20px; }
+    .xwz_con .xwz_title .xwz_block {
+      width: 9px;
+      height: 9px;
+      background: #10518f;
+      float: left;
+      margin-top: 7px; }
+    .xwz_con .xwz_title .xwz_smalltitle {
+      margin-left: 10px;
+      font-size: 16px;
+      color: #4e4e4e;
+      float: left; }
+  .xwz_con .xwz_content p {
+    font-size: 14px;
+    color: #797979;
+    line-height: 24px; }
+  .xwz_con .xwz_content p:nth-child(1) {
+    margin: 20px 0;
+    color: #4e4e4e; }
+  .xwz_con .xwz_content p:nth-child(2) {
+    margin-bottom: 20px; }
+  .xwz_con .xwz_img {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    margin: 40px 0; }

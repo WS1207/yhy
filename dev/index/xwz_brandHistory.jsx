@@ -1,0 +1,66 @@
+const React=require('react');
+const ReactDom=require('react-dom');
+const Common=require('./common.jsx');
+const STheader=require('./st_header.jsx');
+const STfooter=require('./st_footer.jsx');
+
+
+class XwzHistory extends React.Component{
+    render(){
+        return(
+            <div className="xwz_box">
+                <div className="xwz_banner"/>
+                <Common.Xwz_Nav xwz_data={xwz_data} xwz_con1={xwz_con1} xwz_con2={xwz_con2} xwz_con3={xwz_con3} xwz_con4={xwz_con4} xwz_con5={xwz_con5}/>
+                {/*<Common className="Xwz_cons"/>*/}
+            </div>
+        )
+    }
+}
+
+const xwz_data=[
+    {id:0,name:'品牌历史',Eng:'BRAND HISTORY'},
+    {id:1,name:'团队介绍',Eng:'TEAM INTRODUCTION'},
+    {id:2,name:'企业文化',Eng:'CORPORATE CULTURE'},
+    {id:3,name:'企业荣誉',Eng:'ENTERPRISE HONOR'},
+    {id:4,name:'品牌分支',Eng:'BRAND BRANCH'}
+];
+const xwz_con1=[
+    {id:0,title:'品牌介绍',cons:"山西艺弘缘文化传播有限公司成立于2010年，坐落于太原市尖草坪区不锈钢产业园丰源路B区15号，是一家针对城市雕塑、景观小品旅游产品、开发设计，制作与安装为一体的专业性公司。旅游产品有极具山西地域文化特色的泥塑系列、剪纸系列、软陶系列、陶瓷系列；雕塑工程有大型彩塑、玻璃钢雕塑、不锈钢雕塑、泡沫雕塑等。随着公司管理经验的不断提高，业务不断递增，公司将2000平方米的大型车间划分为泥塑车间、彩塑车间、剪纸车间和雕塑车间等。",eng:"SHANXI HONGYUAN ARTS CULTURE COMMUNICATION CO., LTD. WAS FOUNDED IN 2010, IS LOCATED IN TAIYUAN CITY, JIANCAOPING DISTRICT OF STAINLESS STEEL INDUSTRIAL PARK FENG YUAN LU B DISTRICT NO. 15, IS A CITY IN SCULPTURE, LANDSCAPE, TOURISM PRODUCT DEVELOPMENT, DESIGN, PRODUCTION AND INSTALLAION OF PROFESSIONAL COMPANIES.SHANXI TOURISM PRODUCTS HAVE VERY GEOGRAPHICAL AND CULTURAL CHARACTERISTICS OF THE CLAY SCULPTURE SERIES, PAPER SERIES, CLAY SERIES, CERAMIC SCULPTURE SERIES; ENGINEERING A LARGE PAINTED SCULPTURE, GLASS AND STEEL SCULPTURE, STAINLESS STEEL SCULPTURE FOAM SCULPTURE ETC.. WITH THE COMPANY'S MANAGEMENT EXPERIENCE AND CONSTANTLY IMPROVE, CONSTANTLY INCREASING BUSINESS, LARGE WORKSHOP OF 2000 SQUARE METERS WILL BE DIVIDED INTO THE CLAY SCULPTURE WORKSHOP, WORKSHOP, WORKSHOP AND COLORFUL PAPER-CUT SCULPTURE WORKSHOP ETC..",src:'/images/xwz_b3.png'},
+    {id:1,title:'品牌荣誉',cons:"公司自成立以来，成功申报了“小亲疙瘩”“晋商贾缘”等多个商标，群组泥塑中华母亲“祈福中国——大爱无疆”等多项外观形象专利。2014年公司开发的晋祠宋代侍女仿古彩塑的传承与挖掘成为山西省传统工艺美术重点扶持项目，当年在浙江东阳举办的2014世界工艺文化节上获得了“中国工艺美术·百花杯”优秀奖。",eng:'SINCE THE ESTABLISHMENT OF THE COMPANY, TO DECLARE THE SUCCESS OF THE "PRO" SMALL PIMPLE "JIN JIA YUAN" AND OTHER TRADEMARKS, "CLIFFORD CHINESE GROUP CLAY CHINESE MOTHER - LOVE" AND OTHER APPEARANCE PATENT. THE INHERITANCE AND DEVELOPMENT OF THE COMPANY IN 2014, MINING THE SONG DYNASTY ANTIQUE PAINTED SCULPTURE JINCI MAID OF SHANXI PROVINCE HAS BECOME THE TRADITIONAL ARTS AND CRAFTS TO SUPPORT KEY PROJECTS IN ZHEJIANG, DONGYANG HELD THE 2014 WORLD TECHNOLOGY CULTURE FESTIVAL WAS "CHINA ART FLOWERS CUP" AWARD OF EXCELLENCE.'}
+];
+const xwz_con2=[
+    {id:0,title:'团队介绍',cons:"我们有一流的研发、技术团队，为客户提供一站式服务，作品服务于多个领域，并受到客户及艺术专业部门的一致好评，公司秉承“专业的人做专业的事”，努力打造业内一流品质，优质品牌和高效服务。",eng:'WE HAVE A FIRST-CLASS R & D AND TECHNICAL TEAM, TO PROVIDE CUSTOMERS WITH ONE-STOP SERVICE, THE SERVICE WORKS IN A VARIETY OF FIELDS, AND BY CUSTOMERS AND ART PROFESSIONAL DEPARTMENTS ALIKE, THE COMPANY ADHERING TO THE "PROFESSIONAL PEOPLE TO DO PROFESSIONAL THINGS, TO CREATE THE FIRST-CLASS QUALITY, HIGH ',src:'/images/xwz_b5.png'},
+    {id:1,cons:"旅游产品有极具山西地域文化特色的泥塑系列、剪纸系列、软陶系列、陶瓷系列；雕塑工程有大型彩塑、玻璃钢雕塑、不锈钢雕塑、泡沫雕塑等。随着公司管理经验的不断丰富和技术经验的不断提高，业务不断递增，公司将2000平方米的大型车间划分为泥塑车间、彩塑车间、剪纸车间和雕塑车间等。 ",eng:"SHANXI TOURISM PRODUCTS HAVE VERY GEOGRAPHICAL AND CULTURAL CHARACTERISTICS OF THE CLAY SCULPTURE SERIES, PAPER SERIES, CLAY SERIES, CERAMIC SCULPTURE SERIES; ENGINEERING A LARGE PAINTED SCULPTURE, GLASS AND STEEL SCULPTURE, STAINLESS STEEL SCULPTURE, FOAM SCULPTURE ETC.. WITH THE COMPANY'S MANAGEMENT EXPERIENCE AND CONSTANTLY ENRICH AND IMPROVE THE TECHNICAL EXPERIENCE, INCREASE BUSINESS, LARGE WORKSHOP OF 2000 SQUARE METERS WILL BE DIVIDED INTO THE CLAY SCULPTURE WORKSHOP, WORKSHOP, WORKSHOP AND COLORFUL PAPER-CUT SCULPTURE WORKSHOP ETC.."}
+    ];
+const xwz_con3=[
+    {id:0,title:'企业文化',cons:"我们在充分挖掘了中华五千年悠久灿烂的民族文化的基础上，创作出了极具山西地域文化特色的各种泥塑，剪纸。其中泥塑有小亲疙瘩系列，乡村母亲系列，乡村父亲系列等，剪纸 有高档画轴系列，精美画册系列等，产品销往全国各地，并销海内外，深受客户好评",eng:'WE FULLY TAP THE FOUNDATION OF CHINA FIVE THOUSAND YEARS OF SPLENDID ETHNIC CULTURE ON THE CREATION OF A VARIETY OF CLAY HAS SHANXI CHARACTERISTICS OF REGIONAL CULTURE, PAPER-CUT. THE CLAY HAS A SMALL LUMP PRO SERIES, SERIES OF RURAL VILLAGE MOTHERS, FATHER SERIES, HIGH-GRADE PAPER-CUT SCROLL SERIES, EXQUISITE ALBUM SERIES, PRODUCTS ARE SOLD THROUGHOUT THE COUNTRY AND SOLD ABROAD, PRAISED BY CUSTOMERS. IN ORDER TO CARRY FORWARD THE SHANXI HEAVY CULTURE, INHERIT THE CHINESE FOLK ART, AND DEVELOP THE SHANXI SPECIAL CULTURAL GIFTS TO MAKE THEIR OWN CONTRIBUTION.',src:'/images/xwz_b6.png'},
+    {id:1,cons:"公司在深入研究山西的大院文化，根祖文化，黄土文化后，从黄土文化开始着手，开发了一系列相对应的产品，如小亲疙瘩系列，乡村母亲系列，乡村父亲系列，祈福等具有山西土香土色的工艺品。且全部手工制作，做工精细，工艺独特，具有极高的收藏、观赏和 ",eng:"THE COMPANY IN SHANXI IN-DEPTH STUDY OF COURTYARD CULTURE, ANCESTRAL CULTURAL ROOTS, LOESS CULTURE, FROM LOESS CULTURE BEGAN TO DEVELOP A SERIES OF CORRESPONDING PRODUCTS, SUCH AS SMALL PIMPLE PRO SERIES, RURAL VILLAGE FATHER MOTHER SERIES, SERIES, CRAFTS WITH SHANXI BLESSING OR FRAGRANT SOIL. AND ALL HANDMADE, FINE WORKMANSHIP, UNIQUE TECHNOLOGY, WITH A HIGH COLLECTION, APPRECIATION AND COMMEMORATIVE VALUE."},
+    {id:3,title:'企业宗旨',cons:"传承技艺，我们以传统技艺铸工匠精神。创新驱动，我们以核心人才赋时代责任。引领时代，我们以产品质量创世纪辉煌。合作共赢，我们以诚信经营达天下之源。",eng:'HERITAGE SKILLS, WE CAST THE SPIRIT OF CRAFTSMAN TRADITIONAL SKILLS. INNOVATION DRIVEN, WE GIVE THE CORE TALENT ERA RESPONSIBILITY.LEAD THE TIMES, WE CREATE A BRILLIANT PRODUCT QUALITY. WIN-WIN COOPERATION, WE OPERATE IN GOOD FAITH TO THE SOURCE OF THE WORLD.'}
+];
+const xwz_con4=[
+    {id:0,title:'企业荣誉',cons:"公司自成立以来，成功申报了“小亲疙瘩”“晋商贾缘”等多个商标，群组泥塑中华母亲“祈福中国——大爱无疆”等多项外观形象专利。2014年公司开发的晋祠宋代侍女仿古彩塑的传承与挖掘成为山西省传统工艺美术重点扶持项目，当年在浙江东阳举办的2014世界工艺文化节上获得了“中国工艺美术·百花杯”优秀奖。",eng:'SINCE THE ESTABLISHMENT OF THE COMPANY, TO DECLARE THE SUCCESS OF THE "PRO" SMALL PIMPLE "JIN JIA YUAN" AND OTHER TRADEMARKS, "CLIFFORD CHINESE GROUP CLAY CHINESE MOTHER - LOVE" AND OTHER APPEARANCE PATENT. THE INHERITANCE AND DEVELOPMENT OF THE COMPANY IN 2014, MINING THE SONG DYNASTY ANTIQUE PAINTED SCULPTURE JINCI MAID OF SHANXI PROVINCE HAS BECOME THE TRADITIONAL ARTS AND CRAFTS TO SUPPORT KEY PROJECTS IN ZHEJIANG, DONGYANG HELD THE 2014 WORLD TECHNOLOGY CULTURE FESTIVAL WAS "CHINA ART FLOWERS CUP" AWARD OF ',src:'/images/xwz_b7.png'}
+];
+const xwz_con5=[
+    {id:0,title:'品牌分支',cons:"太原市艺鸿苑晋韵古今文化传播中心成立于2010年12月，位于开化寺古玩市场四层，是一家专业从事设计，生产及销售的企业，我们在充分挖掘了中华五千年悠久灿烂的民族文化的基础上，创作出了极具山西地域文化特色的各种泥塑，剪纸。其中泥塑有小亲疙瘩系列，乡村母亲系列，乡村父亲系列等，剪纸 有高档画轴系列，精美画册系列等，产品销往全国各地，并销海内外，深受客户好评。为弘扬山西厚重文化，传承中华民间艺术，开拓山西特色文化礼品做出自己的贡献。",eng:'TAIYUAN CITY, HONG YUAN JINYUN CULTURE COMMUNICATION CENTER WAS FOUNDED IN DECEMBER 2010, IS LOCATED IN KAIHUA TEMPLE ANTIQUE MARKET IN FOUR, IS A PROFESSIONAL ENGAGED IN DESIGN, PRODUCTION AND SALE OF THE BUSINESS, WE FULLY TAP THE FOUNDATION OF CHINA FIVE THOUSAND YEARS OF SPLENDID ETHNIC CULTURE ON THE CREATION OF A VARIETY OF CLAY HAS SHANXI CHARACTERISTICS OF REGIONAL CULTURE, PAPER-CUT. THE CLAY HAS A SMALL LUMP PRO SERIES, SERIES OF RURAL VILLAGE MOTHERS, FATHER SERIES, HIGH-GRADE PAPER-CUT SCROLL SERIES, EXQUISITE ALBUM SERIES, PRODUCTS ARE SOLD THROUGHOUT THE COUNTRY AND SOLD ABROAD, PRAISED BY CUSTOMERS. IN ORDER TO CARRY FORWARD THE SHANXI HEAVY CULTURE, INHERIT THE CHINESE FOLK ART, AND DEVELOP THE SHANXI '}
+];
+
+const stdata=[
+    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand"},
+    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture"},
+    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay"},
+    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut"},
+    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture"},
+    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour"},
+    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact"}
+];
+const Wz =(
+    <div className="">
+        <STheader.Header data={stdata}/>
+
+        <div className="xwzbrand">
+            <XwzHistory/>
+        </div>
+        <Common.st_Footer/>
+    </div>
+);
+ReactDom.render(Wz,document.getElementById('xwzbrand'));
