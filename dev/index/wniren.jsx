@@ -139,13 +139,13 @@ const right_data=[
     {id:1,img:'/images/w20.png',title:'泥塑流派',p:'做源人殉葬，做佛像膜拜，做“耍货”玩赏的民间风俗，是中国泥塑艺术得以发展的主要原因。至唐宋时代，泥塑艺术发展到盛期，著名泥塑有甘肃敦煌莫高窟的菩萨，山西太原晋调的宫女等。至清代，泥塑形成南北两著名流派：北方有天津“泥人张”，南方有无锡惠山泥人。',title2:'石泥塑的概念',t2p:'泥塑，俗称“彩塑”泥塑艺术是中国民间传统的一种古老常见的民间艺术。即用粘土塑制成各种形象的一种民间手工艺制作方法是在粘土里掺入少许棉花纤维，捣匀后，捏制成各种人物的泥坯，经阴干，涂上底粉，再施彩绘。它以泥土为原料，以手工捏制成形，或素或彩，以人物、动物为主。“彩塑”、“泥玩”。泥塑发源于宝鸡市凤翔县，流行于陕西、天津、江苏、河南等地。'}
 ];
 const data=[
-    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand"},
-    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture"},
-    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay"},
-    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut"},
-    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture"},
-    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour"},
-    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact"}
+    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand",isActive:false},
+    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture",isActive:false},
+    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay",isActive:true},
+    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut",isActive:false},
+    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture",isActive:false},
+    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour",isActive:false},
+    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact",isActive:false}
 ];
 const data1 = [
     {id: '01'},

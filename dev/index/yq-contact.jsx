@@ -64,15 +64,15 @@ class Xiang extends React.Component {
                         <div className="xia">
                             <div className="zuo">
                                 <input type="text" ref={(el)=>{this.name=el}} placeholder="NAME" name="name"/>
-                                <img src="/images/contact/my_xiang_0080.png" alt="" />
+                                <img src="/images/my_xiang_0080.png" alt="" />
                             </div>
                             <div className="zhong">
                                 <input type="text" ref={(el)=>{this.phone=el}} placeholder="PHONE" name="phone"/>
-                                <img src="/images/contact/my_xiang_0080.png" alt=""/>
+                                <img src="/images/my_xiang_0080.png" alt=""/>
                             </div>
                             <div className="you">
                                 <input type="text" placeholder="EMAIL" ref={(el)=>{this.email=el}} name="email"/>
-                                <img src="/images/contact/my_xiang_0080.png" alt=""/>
+                                <img src="/images/my_xiang_0080.png" alt=""/>
                             </div>
                             <div className="zhongxia">
                                 <textarea defaultValue="请输入内容。。。" ref={(el)=>{this.message=el}} name="message"></textarea>
@@ -104,13 +104,13 @@ class Contact extends React.Component{
 }
 
 const data=[
-    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand"},
-    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture"},
-    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay"},
-    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut"},
-    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture"},
-    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour"},
-    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact"}
+    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand",isActive:false},
+    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture",isActive:false},
+    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay",isActive:false},
+    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut",isActive:false},
+    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture",isActive:false},
+    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour",isActive:false},
+    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact",isActive:true}
 ];
 ReactDOM.render(<Contact header={data}/>, document.getElementById("tab"));
 

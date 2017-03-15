@@ -41,7 +41,7 @@ class AppNav extends React.Component {
                                border: '1px solid #000',
                                borderRadius: '3px',
                                lineHeight: '17px',
-                               margin: '15px -16px',
+                               margin: '15px',
                                padding: '7px 16px',
                                background: '#fff'
                            }}>

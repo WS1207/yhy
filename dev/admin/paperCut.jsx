@@ -46,40 +46,18 @@ function beforeUpload(file) {
     return isJPG && isLt2M;
 }
 
-function onChange(checked) {
-
-    fetch('/admin/paperCon/rec', {
-        method: 'post',
-        credentials: 'same-origin',
-        headers: {
-            'content-Type': 'application/json'
-        },
-        body: JSON.stringify({checked})
-    }).then((res) => res.json()).then((data) => {
-
-    })
-}
 class Cards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             content: this.props.data.content,
-            imageUrl: this.props.data.url,
+            url: this.props.data.url,
             title: this.props.data.title,
             id: this.props.data.id
         }
         this.content = this.content.bind(this);
         this.title = this.title.bind(this);
         this.delete = this.delete.bind(this);
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    handleChange(info) {
-        if (info.file.status === 'done') {
-            // Get this url from response in real world.
-            getBase64(info.file.originFileObj, imageUrl => this.setState({imageUrl}));
-
-        }
     }
 
     title(e) {
@@ -146,25 +124,38 @@ class Cards extends React.Component {
     }
 
     render() {
-        const imageUrl = this.state.imageUrl;
+        const data={id:this.state.id};
+        const nnn = {
+            name: 'file',
+            action: '/admin/upload',
+            headers: {
+                authorization: 'authorization-text',
+            },
+            data:data,
+            onChange(info) {
+                if (info.file.status !== 'uploading') {
+                    console.log(info.file, info.fileList);
+                }
+                if (info.file.status === 'done') {
+                    message.success(`${info.file.name} file uploaded successfully`);
+                    location.href=`/admin/paperCut`
+                } else if (info.file.status === 'error') {
+                    message.error(`${info.file.name} file upload failed.`);
+                }
+
+            },
+        };
         return (
             <div>
                 <Card style={{width: 270, float: 'left', marginLeft: 10, marginTop: 10}} bodyStyle={{padding: 0}}>
                     <form action="" method="post">
                         <div className="custom-image">
-                            <Upload
-                                className="avatar-uploader"
-                                name="file"
-                                showUploadList={false}
-                                action="/admin/upload"
-                                beforeUpload={beforeUpload}
-                                onChange={this.handleChange}
-                            >
-                                {
-                                    imageUrl ?
-                                        < img src={imageUrl} alt="" className="avatar"/> :
-                                        <Icon type="plus" className="avatar-uploader-trigger"/>
-                                }
+                            <img src={`/images/${this.state.url}`} alt="图片加载失败！"
+                                 style={{width: 100, height: 100,marginTop:20,marginLeft:85}}/>
+                            <Upload {...nnn}>
+                                <Button style={{marginLeft:85,marginTop:10}}>
+                                    <Icon type="upload" /> 更改图片
+                                </Button>
                             </Upload>
                         </div>
                         <div className="custom-card" >
@@ -174,8 +165,6 @@ class Cards extends React.Component {
                             <h3 className="describe" style={{marginTop: 20}}>描述:</h3>
                             <Input type="textarea" placeholder="About the designer" onChange={this.content}
                                    value={this.state.content}/>
-                            <h3 className="describe" style={{marginTop: 20}}>是否设为推荐:</h3>
-                            <Switch defaultChecked={false} onChange={onChange} style={{marginTop: 10}}/>
                         </div>
                         <Button className="aa delete ant-btn ant-btn-primary" type="button" onClick={() => {
                             this.delete()
@@ -183,7 +172,6 @@ class Cards extends React.Component {
                     </form>
                 </Card>
             </div>
-
         )
     }
 }

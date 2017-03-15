@@ -103,7 +103,7 @@
   top: 0;
   z-index: 2;
   background-size: contain;
-  background: url(../images/contact/my_xiang_003.png) no-repeat;
+  background: url(../images/my_xiang_003.png) no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/\%D2\%A6\%E7\%F9\/Desktop\/yaoqi\/www\/public\/css\/yq-contact\.scss}line{font-family:\0000389}}
 .my_xiangbox .xiang .zuo {
@@ -112,7 +112,7 @@
   position: absolute;
   left: -35px;
   top: 344px;
-  background: url(../images/contact/my_xiang_06.png) no-repeat;
+  background: url(../images/my_xiang_06.png) no-repeat;
   background-size: contain;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/\%D2\%A6\%E7\%F9\/Desktop\/yaoqi\/www\/public\/css\/yq-contact\.scss}line{font-family:\0000398}}
@@ -123,7 +123,7 @@
   top: 600px;
   left: 65px;
   background-size: contain;
-  background: url(../images/contact/my_xiang_03_03.png) no-repeat;
+  background: url(../images/my_xiang_03_03.png) no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/\%D2\%A6\%E7\%F9\/Desktop\/yaoqi\/www\/public\/css\/yq-contact\.scss}line{font-family:\00003107}}
 .my_xiangbox .xiang .you {
@@ -133,7 +133,7 @@
   right: -38px;
   top: 428px;
   z-index: 1;
-  background: url(../images/contact/my_xiang_03.png) no-repeat;
+  background: url(../images/my_xiang_03.png) no-repeat;
   background-size: contain;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/\%D2\%A6\%E7\%F9\/Desktop\/yaoqi\/www\/public\/css\/yq-contact\.scss}line{font-family:\00003116}}
@@ -194,7 +194,7 @@
   position: absolute;
   left: 216px;
   top: 500px;
-  background: url(../images/contact/my_xiang_03_07.png) no-repeat;
+  background: url(../images/my_xiang_03_07.png) no-repeat;
   background-size: contain;
   z-index: 3;
 }
@@ -205,7 +205,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  background: url(../images/contact/my_xiang_15.png) no-repeat;
+  background: url(../images/my_xiang_15.png) no-repeat;
   background-size: contain;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/\%D2\%A6\%E7\%F9\/Desktop\/yaoqi\/www\/public\/css\/yq-contact\.scss}line{font-family:\00003181}}

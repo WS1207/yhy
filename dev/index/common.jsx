@@ -135,9 +135,8 @@ class Line extends React.Component {
 //头部
 class Topnav extends React.Component{
     render(){
-        //
         return(
-            <li className={this.props.isActive?'st_navtitle active':'st_navtitle'} onClick={()=>{this.props.click(this.props.index)}}>
+            <li className={this.props.data.isActive?'st_navtitle active':'st_navtitle'}>
                 <a href={this.props.data.href} className="st_titles">{this.props.data.title}</a>
                 <img className="st_border" src={this.props.data.img} alt=""/>
             </li>
@@ -164,7 +163,7 @@ class Header extends React.Component {
                         <img src="/images/st_navbar-logo.png" alt=""/>
                     </div>
                     <ul className="st_navtitlebox">
-                        <li  className={this.state.index==0?'st_navtitle actives':'st_navtitle'}onClick={()=>{this.setState({index:0})}}>
+                        <li  className={this.props.data.isActive?'st_navtitle actives':'st_navtitle'}>
                             <a href="/" className="st_titles" >首页</a>
                             <img className="st_home" src='/images/st_bignav.png' alt=""/>
                         </li>

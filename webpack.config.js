@@ -14,10 +14,8 @@ module.exports = {
         products: path.resolve('./dev/admin/products.jsx'),
         video: path.resolve('./dev/admin/video.jsx'),
         location: path.resolve('./dev/admin/location.jsx'),
-
         home: path.resolve('./dev/index/home.jsx'),
         index: path.resolve('./dev/index/index.jsx'),
-        txtlist: path.resolve('./dev/index/txtlist.jsx'),
         windex: path.resolve('./dev/index/windex.jsx'),
         wniren: path.resolve('./dev/index/wniren.jsx'),
         xwz_brandHistory: path.resolve('./dev/index/xwz_brandHistory.jsx'),

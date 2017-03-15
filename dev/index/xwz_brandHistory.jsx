@@ -1,10 +1,6 @@
 const React=require('react');
 const ReactDom=require('react-dom');
 const Common=require('./common.jsx');
-const STheader=require('./st_header.jsx');
-const STfooter=require('./st_footer.jsx');
-
-
 class XwzHistory extends React.Component{
     render(){
         return(
@@ -45,18 +41,17 @@ const xwz_con5=[
 ];
 
 const stdata=[
-    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand"},
-    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture"},
-    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay"},
-    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut"},
-    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture"},
-    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour"},
-    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact"}
+    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand",isActive:true},
+    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture",isActive:false},
+    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay",isActive:false},
+    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut",isActive:false},
+    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture",isActive:false},
+    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour",isActive:false},
+    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact",isActive:false}
 ];
 const Wz =(
     <div className="">
-        <STheader.Header data={stdata}/>
-
+        <Common.st_Header data={stdata}/>
         <div className="xwzbrand">
             <XwzHistory/>
         </div>

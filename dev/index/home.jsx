@@ -61,7 +61,7 @@ class Culture extends  React.Component{
                 <div className="wenhua">
                     <div className="zuo">
                         <div className="tu">
-                            <img src="/images/home/yq-8888_03.png" alt=""/>
+                            <img src="/images/yq-8888_03.png" alt=""/>
                         </div>
                         <div className="zi">
                             <p>山西艺弘缘文化传播有限公司成立于2010年，坐落于太原市不锈钢产业园丰源路B区15号，是一家针对城市雕塑、景观小品、旅游产品、开发设计，制作与安装为一体的专业性公司。旅游产品有极具山西地域。
@@ -79,7 +79,7 @@ class Culture extends  React.Component{
                         </div>
                     </div>
                     <div className="you">
-                        <img src="/images/home/yq-0000.png" alt=""/>
+                        <img src="/images/yq-0000.png" alt=""/>
                     </div>
                 </div>
             </div>
@@ -157,17 +157,17 @@ class Show extends React.Component{
         const people = this.props.data.map((v,i)=>(
             <li className="xm_people" key={i}>
                 <img className="xm_people" src={v.people}/>
-                <img className="xm_xd" src="/images/home/xd.png" alt=""/>
+                <img className="xm_xd" src="/images/xd.png" alt=""/>
                 <img className="xm_xz" src={v.xz} alt=""/>
-                <img className="xm_xb" src="/images/home/xb.png" alt=""/>
+                <img className="xm_xb" src="/images/xb.png" alt=""/>
                 <a href="javascript:;">
-                    <img className="xm_xj" src="/images/home/xj.png" alt=""/>
+                    <img className="xm_xj" src="/images/xj.png" alt=""/>
                 </a>
             </li>))
         return(
             <div className="xm_show">
                 <div className="xm_title">
-                    <img src="/images/home/x_title.png" alt=""/>
+                    <img src="/images/x_title.png" alt=""/>
                 </div>
                 <ul className="xm_content" id="xm_content">
                     {people}
@@ -191,9 +191,9 @@ class Yuan extends React.Component {
                     <div className="my_xia">
                         <div className="shang">
                             <div className="zi">
-                                <img src="/images/home/my_yuan_10.png" alt=""/>
+                                <img src="/images/my_yuan_10.png" alt=""/>
                                 <div className="yuan">
-                                    <img src="/images/home/my_yuan_13.png" alt=""/>
+                                    <img src="/images/my_yuan_13.png" alt=""/>
                                 </div>
                             </div>
                             <div className="hui">
@@ -209,17 +209,17 @@ class Yuan extends React.Component {
                                 </div>
                                 <div className="xiang">
                                     <a href="javascript:">
-                                        <img src="/images/home/my_yuan_20.png" alt=""/>
+                                        <img src="/images/my_yuan_20.png" alt=""/>
                                     </a>
                                 </div>
                             </div>
-                            <img src="/images/home/my_yuan_07.png" alt=""/>
+                            <img src="/images/my_yuan_07.png" alt=""/>
 
                         </div>
                         <div className="xia">
                             <div className="zuo">
                                 <div className="tu">
-                                    <img src="/images/home/my_yuan_131.png" alt=""/>
+                                    <img src="/images/my_yuan_131.png" alt=""/>
                                 </div>
                                 <div className="zi">
                                     <p> 园林雕塑有悠久的历史。文艺复兴时期，雕塑已成为意大利园林的
@@ -237,12 +237,12 @@ class Yuan extends React.Component {
                                 </div>
                                 <div className="xiang">
                                     <a href="javascript:">
-                                        <img src="/images/home/my_yuan_20.png" alt=""/>
+                                        <img src="/images/my_yuan_20.png" alt=""/>
                                     </a>
                                 </div>
                             </div>
                             <div className="you">
-                                <img src="/images/home/my_yuan_11.png" alt=""/>
+                                <img src="/images/my_yuan_11.png" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -259,10 +259,10 @@ class Chan extends React.Component {
                 <div className="my_chanbox">
                     <div className="chan">
                         <div className="shang">
-                            <img src="/images/home/my_chan_03.png" alt=""/>
+                            <img src="/images/my_chan_03.png" alt=""/>
                         </div>
                         <div className="xia">
-                            <img src="/images/home/my_ping_07.png" alt=""/>
+                            <img src="/images/my_ping_07.png" alt=""/>
                         </div>
                     </div>
 
@@ -294,21 +294,21 @@ class Home extends React.Component{
 }
 //头部数据
 const data=[
-    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand"},
-    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture"},
-    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay"},
-    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut"},
-    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture"},
-    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour"},
-    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact"}
+    {id:1,title:'品牌介绍',img:'/images/st_navhover.png',href:"brand",isActive:false},
+    {id:1,title:'晋韵文化',img:'/images/st_navhover.png',href:"culture",isActive:false},
+    {id:1,title:'原生态泥人',img:'/images/st_niren.png',href:"clay",isActive:false},
+    {id:1,title:'剪纸艺术',img:'/images/st_navhover.png',href:"papercut",isActive:false},
+    {id:1,title:'园林雕塑',img:'/images/st_navhover.png',href:"sculpture",isActive:false},
+    {id:1,title:'旅游产品',img:'/images/st_navhover.png',href:"tour",isActive:false},
+    {id:1,title:'联系我们',img:'/images/st_navhover.png',href:"contact",isActive:false}
 ];
 //banner
 const carousel=[
-    {id:1,url:'/images/home/x_1.png'},
-    {id:2,url:'/images/home/x_2.jpg'},
-    {id:3,url:'/images/home/x_3.jpg'},
-    {id:4,url:'/images/home/x_4.jpg'},
-    {id:5,url:'/images/home/x_5.jpg'}
+    {id:1,url:'/images/x_1.png'},
+    {id:2,url:'/images/x_2.jpg'},
+    {id:3,url:'/images/x_3.jpg'},
+    {id:4,url:'/images/x_4.jpg'},
+    {id:5,url:'/images/x_5.jpg'}
 ];
 //选项卡
 var lists = [
@@ -332,9 +332,9 @@ var lists = [
 ]
 //原泥塑
 const arr=[
-    {id:1,people:'/images/home/x1.png',xz:'/images/home/xz.png'},
-    {id:2,people:'/images/home/x2.png',xz:'/images/home/xz1.png'},
-    {id:3,people:'/images/home/x1.png',xz:'/images/home/xz2.png'},
-    {id:4,people:'/images/home/x2.png',xz:'/images/home/xz.png'}
+    {id:1,people:'/images/x1.png',xz:'/images/xz.png'},
+    {id:2,people:'/images/x2.png',xz:'/images/xz1.png'},
+    {id:3,people:'/images/x1.png',xz:'/images/xz2.png'},
+    {id:4,people:'/images/x2.png',xz:'/images/xz.png'}
 ];
 ReactDOM.render(<Home header={data} carousel={carousel} tab={lists} show={arr}/>,document.getElementById("home"))

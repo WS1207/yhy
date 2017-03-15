@@ -77,6 +77,7 @@ router.get('/culture/essay', (req, res) => {
     res.sendFile(path.resolve('./views/admin/essay.html'))
 });
 //4文章管理////////////
+
 router.post('/article_upload', upload.single('file'), (req, res) => {
     async.series([
         function (callback) {
@@ -86,10 +87,12 @@ router.post('/article_upload', upload.single('file'), (req, res) => {
         }, function (callback) {
             fs.unlink(path.resolve(req.file.path));
             callback(null);
-        }, function () {
-            res.end('ok')
         }
-    ])
+    ],function(){
+        mysql.query("update culture_article set url=? where id=?",[req.file.originalname,req.body.id],(data)=>{
+            res.json('ok')
+        })
+    })
 });
 //查找
 router.post('/article_sele', (req, res) => {
@@ -134,10 +137,12 @@ router.post('/upload', upload.single('file'), (req, res) => {
         }, function (callback) {
             fs.unlink(path.resolve(req.file.path));
             callback(null);
-        }, function () {
-            res.end('ok')
         }
-    ])
+    ],function(){
+        mysql.query("update papercut set url=? where id=?",[req.file.originalname,req.body.id],(data)=>{
+            res.json('ok')
+        })
+    })
 });
 //查找
 router.post('/paperCon', (req, res) => {
@@ -165,14 +170,9 @@ router.post('/paupdate',(req,res)=>{
 
         })
     }
-})
-//推荐位
-router.post('/paperCon/rec', (req, res) => {
-
-    mysql.query('update papercut set rec=? where id=?', [req.body.rec,req.body.id], function (data) {
-
-    })
 });
+
+
 
 //6视频管理
 router.get('/tour/video', (req, res) => {
