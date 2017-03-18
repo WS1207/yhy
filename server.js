@@ -30,7 +30,7 @@ app.use('/admin',(req,res,next)=>{
 
 app.use('/admin',adminRouter);
 
-app.listen(3000,()=>{
+app.listen(8002,()=>{
     console.log('服务已经启动');
 });
 //
